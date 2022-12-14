@@ -1,0 +1,253 @@
+/*------------------------------------------------------
+    Mobile-First In-House CSS Framework
+    --
+    (*) Uses CSS Grid and Flexbox
+    (*) Media Queries for displaying bigger screen
+        sizes.
+    (*) BEM Component Model!
+------------------------------------------------------*/
+
+
+
+/*  *   *   *   *   *   *   *   *
+ *  
+ *   Helpers
+ *  
+ *  *   *   *   *   *   *   *   */
+
+* {
+    font-family: sans-serif;
+}
+
+.pad-md {
+    padding: 1em;
+}
+
+ /*  *   *   *   *   *   *   *   *
+ *  
+*   Block Containers 
+ *  
+ *  *   *   *   *   *   *   *   */
+
+/* Row Block Container */
+.row {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+/* Grid Block Container */
+.inline.grid-block {
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
+    display: inline-grid;
+}
+.grid-block {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+}
+
+/* Grid Block Container Modifiers */
+@media screen and (orientation: portrait) {
+    .grid-block_auto {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .grid-block_auto {
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+    }
+}
+@media screen and (min-width: 789px) and (max-width: 6000px){
+    .grid-block_auto {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        width: 95vw;
+        margin: auto;
+    }
+}
+
+/* Flex Block Container */
+.flex-block {
+    display: flex;
+    width: 100%;
+}
+
+/* Flex Block Container Modifiers */
+.flex-block_centered {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-block_large {
+    min-height: 12em;
+}
+
+/* Flex Block Container Modifiers */
+
+
+/* Nav Block Container */
+.nav {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+/* Nav Block Modifiers */
+
+.nav.bar {
+    flex-flow: row wrap;
+    z-index: 999;
+}
+
+.nav.fill {
+    display: block;
+    position: relative;
+    padding-top: 3rem;
+}
+
+.nav.menu {
+    top: 2rem;
+    margin-top: 0.5em;
+    height: 70vh;
+}
+
+/* Nav Block Elements */
+.nav__heading, .nav__item {
+    display: inline-flexbox;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__heading {
+    flex-grow: 1;
+}
+
+.nav__item {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav__link, .nav__menu-btn {
+    padding: 0.75rem;
+}
+
+.nav__link {
+    width: 100%;
+}
+
+/* Nav Block Element Modifiers */
+.nav__link:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav__item_end {
+    width: max-content;
+    margin-left: auto;
+}
+
+/* Jumbotron Block Container */
+.jumbotron {
+    width: 100%;
+    min-height: 87.525vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+/* Jumbotron Block Elements */
+
+.jumbotron__header, .jumbotron__subheader, .jumbotron__body {
+    width: 100%;
+    max-height: max-content;
+    padding: 0.65rem;
+}
+
+.jumbotron__header {
+    font-size: 12vw;
+    font-weight: 700;
+}
+
+.jumbotron__subheader {
+    font-size: 8vw;
+}
+
+.jumbotron__body {
+    min-height: 12rem;
+    font-size: 4.545vw;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.jumbotron__content {
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron__content_shrink {
+    width: max-content;
+}
+
+.jumbotron__cta-btn {
+    padding: 0.5rem;
+    height: 100%;
+    font-size: 3.89525vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (orientation: landscape) {
+    .jumbotron {
+        min-height: 82.5vh;
+    }
+    .jumbotron__header {
+        font-size: 12vh;
+    }
+    .jumbotron__subheader {
+        font-size: 8vh;
+    }
+    .jumbotron__body {
+        min-height: 5rem;
+        font-size: 4.545vh;
+    }
+    .jumbotron__cta-btn {
+        font-size: 3.89525vh;
+    }
+}
+
+/* Container Block Container */
+.container {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+}
+
+/* Container Block Elements */
+
+/* Container Block Element Modifiers */
+
+
+.container__content_shrink {
+    width: max-content;
+    height: max-content;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - Website Starter Template</title>
+    <!-- JQuery -->
+        <!-- Development Build [PICK ONE] -->
+            <script src="scripts/js/jquery/development.js"></script>
+        <!-- /Development -->
+        <!-- Production Build [PICK ONE] ->
+            <script src="scripts/js/jquery/production.js"></script>
+        <!- /Production -->
+    <!-- /JQuery -->
+    
+    <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome/all.min.css">
+        <script src="scripts/js/font-awesome/all.min.js"></script>
+    <!-- /Font Awesome -->
+
+    <!-- In-House/Custom Styling -->
+    <link rel="stylesheet" href="css/simple-reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <style>
+        .bg-white {
+            background: white;
+        }
+
+    </style>
+    <!-- /In-House/Custom Styling -->
+</head>
+<body>
+    <nav id="navigation">
+        <div class="nav fill">
+        <section id="mobile-nav" class="nav bar bg-white">
+            <div class="nav__heading">
+                <a href="/" class="nav__link">Website</a>
+            </div>
+            <div class="nav__item nav__item_end">
+                <button class="nav__menu-btn" title="More Menu Links"><i class="fas fa-bars"></i></button>
+            </div>
+        </section>
+        <section id="mobile-menu" class="nav menu hidden bg-white">
+            <span class="nav__item">
+                <a href="#" class="nav__link">Link</a>
+            </span>
+            <span class="nav__item">
+                <a href="#" class="nav__link">Link</a>
+            </span>
+            <span class="nav__item">
+                <a href="#" class="nav__link">Link</a>
+            </span>
+            <span class="nav__item">
+                <a href="#" class="nav__link">Link</a>
+            </span>
+            <span class="nav__item">
+                <a href="#" class="nav__link">Link</a>
+            </span>
+        </section>
+    </div>
+    </nav>
+    <header class="jumbotron">
+        <h1 class="jumbotron__header">Welcome!</h1>
+        <h2 class="jumbotron__subheader">You used the Starter Template!</h2>
+        <div class="jumbotron__body">
+            <section class="jumbotron__content">
+                <p>
+                    Thanks for starting out with our template. We are mobile-first, and optimized for backwards and cross-compatibility.
+                    Learn more about our Starter Template, or begin using the template to get started!
+                </p>
+            </section>
+            <section class="jumbotron__content jumbotron__content_shrink">
+                <button class="jumbotron__cta-btn" title="Learn More!">Click here to learn more about the Starter Template!</button>
+            </section>
+        </div>
+    </header>
+    <section class="grid-block grid-block_auto">
+        <div class="container row">
+            <div class="container__header container__content_shrink">
+                <h3 class="container__heading">We are lightweight!</h3>
+            </div>
+            <div class="container__body container__content_shrink">
+                <p>
+                    We use our in-house simple CSS reset. It's pretty small, and the production version is minified too! We just bring the
+                    HTML DOM Document down to a completely blank slate, with a few preferences in how we handle some of the HTML5 block
+                    elements. We think this is the perfect blank slate to use CSS Flexbox, CSS Grid, a combination of both, or just some
+                    other CSS Framework without conflict. Lots of predictable behavior too! All our other styling is built in house! Our
+                    own "framework" if you'd think. It helps us practice making a BEM Component Module Mobile First CSS Template, a little
+                    guide for you as well to show you how simple it is to style!
+                </p>
+            </div>
+            <div class="container__footer ">
+                <button class="btn" title="Check out the Reset!">Take a view at the Dev Reset File!</button>
+            </div>
+        </div>
+        <div class="container row">
+            <div class="container__header container__content_shrink">
+                <h3 class="container__heading">We are low-dependency!</h3>
+            </div>
+            <div class="container__body container__content_shrink">
+                <p>
+                    We mainly use our own scripts and CSS files! We only utilize jQuery3 to help us out with some animations, toggles,
+                    transitions and selectors. It makes prototyping far quicker, though with JavaScript's <code>document.querySelector()</code>,
+                    it wouldn't be hard to do all that ourselves. That might be for another template! We also use Font Awesome for its... awesome
+                    icons! Creative; I know, right?
+                </p>
+            </div>
+            <div class="container__footer">
+                <button class="btn" title="Check out the Styling!">Take a view at the Dev Stylesheet!</button>
+            </div>
+        </div>
+        <div class="container row">
+            <div class="container__header container__content_shrink">
+                <h3 class="container__heading">We are cutting-edge!</h3>
+            </div>
+            <div class="container__body container__content_shrink">
+                <p>
+                    We use as much of the latest semantics from HTML5 and CSS3 to ensure that we are up-to-date with the latest, but still maintaining
+                    robust backwards compatibility. We are also keeping up-to-date with the latest ECMAScript (JavaScript) syntax to ensure high
+                    performance application builds using the latest optimizations whenever and wherever possible.
+                </p>
+            </div>
+            <div class="container__footer">
+                <button class="btn" title="Check out the JavaScript!">Take a view at the Dev JavaScript File!</button>
+            </div>
+        </div>
+    </section>
+    <section class="flex-block flex-block_large flex-block_centered pad-md">
+        <p>Well? Why are you still here!? Get started using this starter template! I'm about to dump some lorem ipsum on ya now!</p>
+    </section>
+    <section class="block">
+        <div class="mobile-sidebar">
+            <button class="mobile-sidebar__menu-btn" title="More Sidebar Links"><i class="fas fa-bars"></i></button>
+        </div>
+        <aside class="mobile-sidemenu">
+            <span class="mobile-sidemenu__item">
+                <a href="#!" class="mobile-sidemenu__link">Sidebar Item Link 1</a>
+            </span>
+            <span class="mobile-sidemenu__item">
+                <button class="mobile-sidemenu__btn">Sidebar Item Accordian</button>
+                <div class="mobile-sidemenu__submenu">
+                    <span class="mobile-sidemenu__submenu-block-item">
+                        <div class="mobile-sidemenu__submenu-block-item_header">
+                            <h4 class="mobile-sidemenu__submenu-block-item_heading">Side Bar Article!</h4>
+                        </div>
+                        <div class="mobile-sidemenu__submenu-block-item_content">
+                            <p class="mobile-sidemenu__submenu-block-item_body">
+                                I'm a test of an article for the side bar. See my lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolores 
+                                numquam deserunt optio perferendis, quaerat repellat adipisci ad consequuntur labore unde. Veritatis deleniti hic quam 
+                                blanditiis earum, ullam labore cumque magni. Nam!
+                            </p>
+                        </div>
+                    </span>
+                    <span class="mobile-sidemenu__submenu-link-item">
+                        <a href="#!" class="mobile-sidemenu__submenu-link">Side Bar Sub Menu Link!</a>
+                    </span>
+                </div>
+            </span>
+            <span class="mobile-sidemenu__block-item">
+                <a href="#!" class="mobile-sidemenu__link"><img src="https://via.placeholder.com/200/?text=Ad!" alt="Placeholder Ad"></a>
+            </span>
+        </aside>
+        <div class="block block_margin-auto">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad modi laborum fugiat, nisi exercitationem voluptate voluptatum tempore sunt? Reiciendis exercitationem non laboriosam? Ducimus porro aperiam earum eaque, esse tempore! Nesciunt quibusdam ullam illum consequatur sapiente quo veniam eaque ad quos.</p>
+        </div>
+        <div class="flex-block">
+            <article class="card card_standard">
+                <section class="card__head">I'm a Traditional Card!</section>
+                <section class="card__img"><img src="https://via.placeholder.com/200/" alt="Placeholder Img"></section>
+                <section class="card__content">
+                    <section class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nobis?</section>
+                </section>
+                <section class="card__foot">This was a Traditional Card Test!</section>
+            </article>
+            <article class="card card_image">
+                <section class="card__head">I'm a Traditional Card!</section>
+                <section class="card__img"><img src="https://via.placeholder.com/200/" alt="Placeholder Img"></section>
+                <section class="card__content">
+                    <section class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nobis?</section>
+                </section>
+                <section class="card__foot">This was a Traditional Card Test!</section>
+            </article>
+            <article class="card card_no-image">
+                <section class="card__head">I'm a Traditional Card!</section>
+                <section class="card__img"><img src="https://via.placeholder.com/200/" alt="Placeholder Img"></section>
+                <section class="card__content">
+                    <section class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nobis?</section>
+                </section>
+                <section class="card__foot">This was a Traditional Card Test!</section>
+            </article>
+        </div>
+    </section>
+    <footer class="footer">
+        <section id="mobile-foot" class="mobile-foot">
+            <div class="grid-block grid-block_three">
+                <section>
+                    <a href="#top" class="mobile-foot__link">Back to Top</a>
+                </section>
+                <section class="inline grid-block grid-block_four">
+                    <a href="#top" class="mobile-foot__link"><i class="fas fa-globe"></i></a>
+                    <a href="#top" class="mobile-foot__link"><i class="fab fa-github"></i></a>
+                    <a href="#top" class="mobile-foot__link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#top" class="mobile-foot__link"><i class="fab fa-instagram"></i></a>
+                </section>
+                <section>
+                    <a href="#top" class="mobile-foot__link">Sitemap</a>
+                </section>
+            </div>
+            <div class="grid-block grid-block_three">
+                <section class="mobile-foot__logo">
+                    <img src="https://via.placeholder.com/" alt="Placeholder Logo">
+                </section>
+                <section class="mobile-foot__content">
+                    <h5 class="mobile-foot__heading">Website Template!</h5>
+                    <p class="mobile-foot__body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur ducimus aperiam recusandae.</p>
+                    <p class="mobile-foot__copy">
+                        Copyright &copy; 2022 - AVATO Media.
+                        <br>
+                        Designed and Developed by Gerard Francis.
+                        <br>
+                        All Rights Reserved.
+                        <br>
+                        Please review our <a href="/license.md">license</a> for usage on this site template.
+                    </p>
+                </section>
+                <section class="mobile-foot__site-links">
+                    <a href="#!" class="mobile-foot__link">Link 1</a>
+                    <a href="#!" class="mobile-foot__link">Link 2</a>
+                    <a href="#!" class="mobile-foot__link">Link 3</a>
+                    <a href="#!" class="mobile-foot__link">Link 4</a>
+                    <a href="#!" class="mobile-foot__link">Link 5</a>
+                </section>
+            </div>
+        </section>
+    </footer>
+</body>
+<script>
+    $('.nav__menu-btn').click((event) => {
+        event.preventDefault();
+        $('#mobile-menu').toggleClass('hidden');
+    });
+</script>
+</html>
