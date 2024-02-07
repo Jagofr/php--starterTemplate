@@ -7,6 +7,12 @@
     <img src="https://img.shields.io/static/v1?label=jQuery&message=Enhanced&color=2C445C&style=for-the-badge&logo=jquery" alt="JavaScript Badge">
 </div>
 
+## Current TODOs
+- [] Add additional styling with colors and placeholder images.
+- [] Add additional pages to show styling across pages.
+- [] Implement template user registration and login (session manager).
+- [] More to list...
+
 ## Get Started
 Jump into using the template by loading up [index.html](/index.html) and taking a view on how the template looks! Remember
 to review the [license](/LICENSE.MD) to ensure that you're using this template correctly. From there, you can edit the document how you feel! Add whatever you need to make everything work.
