@@ -8,10 +8,10 @@
 </div>
 
 ## Current TODOs
-- [] Add additional styling with colors and placeholder images.
-- [] Add additional pages to show styling across pages.
-- [] Implement template user registration and login (session manager).
-- [] More to list...
+- [ ] Add additional styling with colors and placeholder images.
+- [ ] Add additional pages to show styling across pages.
+- [ ] Implement template user registration and login (session manager).
+- [ ] More to list...
 
 ## Get Started
 Jump into using the template by loading up [index.html](/index.html) and taking a view on how the template looks! Remember
